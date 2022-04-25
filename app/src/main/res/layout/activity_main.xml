@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travelling Dealer"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/loodos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/addCustomerToListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Nodes To List"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/sumOfNodesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sum Of Nodes"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/printListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Print List"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/printLengthOfListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Print Length Of List"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/deleteNodeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete  Node"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/clearListButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear List"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
